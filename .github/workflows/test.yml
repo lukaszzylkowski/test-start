@@ -1,7 +1,5 @@
 name: push exclude
-on:
-  push:
-    branches: [main]
+on: workflow_dispatch
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -20,3 +18,4 @@ jobs:
         destination-github-username: 'lukaszzylkowski'
         destination-repository-name: 'test-end'
         target-branch: 'main'
+        commit-message: ${{ github.event.head_commit.message }}}}
