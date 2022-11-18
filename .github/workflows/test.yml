@@ -1,5 +1,7 @@
 name: push exclude
-on: workflow_dispatch
+on:
+  push:
+    branches: [ for-public ]
 jobs:
   build:
     runs-on: ubuntu-latest
