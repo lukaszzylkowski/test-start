@@ -9,7 +9,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: prune workflows
-      run: rm -rf .github/ .git/
+      run: rm -rf .github/
     
     - name: push to public
       uses: cpina/github-action-push-to-another-repository@main
