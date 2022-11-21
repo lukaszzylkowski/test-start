@@ -20,4 +20,4 @@ jobs:
         destination-github-username: 'lukaszzylkowski'
         destination-repository-name: 'test-end'
         target-branch: 'main'
-        commit-message: ${{ github.event.head_commit.message }}}}
+        commit-message: ${{ github.event.head_commit.message }}
